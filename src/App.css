@@ -9,7 +9,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: spin infinite 20s linear;
   }
 }
 
@@ -28,7 +28,7 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
@@ -37,8 +37,16 @@
   }
 }
 
+.spin {
+  animation: spin infinite 5s linear;
+}
+
 .display-none {
   display: none;
+}
+
+.round {
+  border-radius: 100%;
 }
 
 :root {
@@ -93,4 +101,10 @@
 .upload:hover::after {
   width: calc(100% + 9px);
   height: calc(100% + 9px);
+}
+
+.upload.wait:hover::before,
+.upload.wait:hover::after {
+  width: calc(15% + 9px);
+  height: calc(15% + 9px);
 }
