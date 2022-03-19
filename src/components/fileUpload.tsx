@@ -25,7 +25,7 @@ export default function FileUpload({
         htmlFor="file"
         className={`upload ${loading && "wait spin round"}`}
       >
-        {!loading && "yuh"}
+        {!loading && "Upload a file"}
       </label>
     </>
   );
